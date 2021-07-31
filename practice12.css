@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  font-family: "微軟正黑體";
+}
+
+.panelOne {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(orange, pink, red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+.panelOne img {
+  width: 10%;
+  height: 20%;
+}
+.panelOne h1 {
+  margin-bottom: 15%;
+}
+.panelOne .btn {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.panelOne .btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+.panelTwo {
+  position: absolute;
+  font-size: 200px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.05);
+  display: none;
+}
+
+.panelThree {
+  position: absolute;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 25px;
+  display: none;
+}
+
+.pauseGame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pauseGame img {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 5%;
+  height: 10%;
+  transform: translate(-50%, -50%);
+}
+.pauseGame .btnPause {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: transparent;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: "black";
+}
+.pauseGame .btnPause:hover {
+  background-color: gray;
+  color: white;
+}
+
+.countDown {
+  position: absolute;
+  font-size: 200px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 82, 82, 0.2);
+  text-align: center;
+  line-height: 650%;
+  color: red;
+}
+
+.btnIll {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.btnIll:hover {
+  background-color: gray;
+  color: white;
+}
+
+.btnRun {
+  position: absolute;
+  bottom: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.5s;
+  background-color: transparent;
+}
+.btnRun:hover {
+  background-color: red;
+  color: white;
+}
+
+.panelTalk {
+  position: absolute;
+  width: 45%;
+  height: 75%;
+  text-align: center;
+  line-height: 200%;
+  background-color: #070000a2;
+  background-filter: blur(2px);
+  color: white;
+}
+.panelTalk img {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+  width: 4%;
+  height: 6%;
+  cursor: pointer;
+}
+
+#mycanvas {
+  max-width: 100%;
+}
