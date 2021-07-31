@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice12.css">
+    <script src="Gui.js"> </script>
+    <script src="Tone.js"> </script>
+    <script src="jQuery.js"> </script>
+    <script src="practice12.js"> </script>
+  </head>
+  <body> 
+    <div class="panelOne"> <img src="https://vignette.wikia.nocookie.net/dragon-story/images/6/64/Quetzal_Baby.png/revision/latest?cb=20120809235150" alt="">
+      <h1> 貪吃蛇 ( Eat snakes )</h1>
+      <button class="btn">開始遊戲 </button>
+    </div>
+    <div class="panelTwo"></div>
+    <div class="panelThree"> </div>
+    <div class="pauseGame"> 
+      <div class="btnPause">繼續遊戲</div><img src="https://th.bing.com/th/id/R.1a488f9d66b7425cde0d3fcfd611101f?rik=xUZcZl%2bIQJAPpQ&amp;riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fbTy%2f6XX%2fbTy6XXejc.png&amp;ehk=xwCK0eqZKo4gLdAXnA5k0tpBfC2JRFP0CO4UuswZtrU%3d&amp;risl=&amp;pid=ImgRaw" alt="">
+    </div>
+    <div class="countDown"> </div>
+    <div class="btnIll">遊戲說明</div>
+    <div class="panelTalk"> <img src="https://image.flaticon.com/icons/png/512/242/242952.png" alt="">
+      <h1>歡迎來玩貪吃蛇 </h1>
+      <h3>遊戲玩法 </h3>
+      <h5>觸碰鍵盤 上 下 左 右鍵 來使版面上的蛇移動，並吞食版面上的任何食物，每次吃完食物又會生成更多食物，讓蛇可以使勁成長，成長到一定量，最後也會獲得相應的分數總合，以上。</h5>
+      <h3>遊戲按鍵設定 「 Esc 」 為暫停遊戲 「 K 」 鍵為 外包模式 ，還請多加留意 ，目前只開發到這2種選項，後續還會優化，還請包涵</h3>
+      <h3>外包模式詳細內容</h3>
+      <p>遊戲開始和暫停時才可以開啟外包模式，當按下「 K 」鍵按鈕時會在右上角發現一些控制選項，以上選項除了「 MaxBlock 」為調整格子大小還在維護中，其餘的皆可正常使用，首先是「 vectorUp 」為調整蛇移動上方的速度，再來是「 vectorDown 」往下調整移動的速度，之後有「 vector  」都是以此類推，再來你會看到「 SnakeColor 」，這個則是調整蛇的顏色，「 countPoint 」能調整遊戲整體分數，「 foodMany 」可以調整每次吃完時增加的食物大小，這個還請多注意使用在電腦上。再來大家最期待的是這個遊戲最強大的機制**不死和直接左右移動分別是「 NoDie  」和「 CanTurn 」，最後一個是手動暫停遊戲「 PauseGameK  」。</p>
+      <hr>
+      <h1>開發者日記##    </h1>
+      <p>請還多期待開發者未來的作品，各位玩遊戲的有意見的也可以告誡一下!!</p>
+    </div>
+    <canvas id="mycanvas"> </canvas>
+  </body>
+</html>
